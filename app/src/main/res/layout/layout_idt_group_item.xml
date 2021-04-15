@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:minHeight="50dp">
+
+    <ImageView
+        android:id="@+id/arrow_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/new_ui_group_page_arrow_close" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:text="测试一组"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/message_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="55dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:padding="7dp"
+        android:src="@mipmap/cus_msg" />
+
+
+</RelativeLayout>

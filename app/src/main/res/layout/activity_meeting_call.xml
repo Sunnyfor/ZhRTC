@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_theme"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/meetingUiLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/new_ui_logo" />
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/video_metting"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_ui_audio_call_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.87">
+
+        <TextView
+            android:id="@+id/tiaoshi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_group_number"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_group_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="10005"
+            android:textColor="#FFFFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tiaoshi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_group_number"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_group_number"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_talking_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/now_call_user"
+                android:textColor="#ffffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"
+            android:text="R:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_group_number"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_marginLeft="14dp"
+            android:text="00/000"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/chronometer_call_time"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_alignBottom="@+id/chronometer_call_time"
+            android:text="S:"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/send_stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="00/000"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/send_stream"
+            android:layout_alignBottom="@+id/send_stream"
+            android:layout_alignParentRight="true"
+            android:text="kpbs"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/chronometer_call_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stream"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stream"
+            android:layout_alignBottom="@+id/stream"
+            android:layout_alignParentRight="true"
+            android:text="kbps"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_video_answer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <!-- 以下两个为视频显示的位置 -->
+
+        <SurfaceView
+            android:id="@+id/surfaceView_remote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/full_screen_canel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/new_ui_voice_call_hung_up"
+            android:visibility="gone" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView_local"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageButton
+            android:id="@+id/set_full_scean"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/landscape_hangup"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/new_ui_voice_call_hung_up"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_ui_audio_call_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <ImageButton
+            android:id="@+id/close_speaker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/btn_speak"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="@mipmap/open_maike" />
+
+        <ImageButton
+            android:id="@+id/btn_speak"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:background="@mipmap/new_ui_ppt01" />
+
+        <ImageButton
+            android:id="@+id/btn_hangup_conned"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/new_ui_voice_call_hung_up"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/turnCamera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/closeAudio"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/closeAudio"
+            android:background="@drawable/new_camera_selector" />
+
+        <ImageButton
+            android:id="@+id/closeAudio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/close_speaker"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/close_speaker"
+            android:background="@mipmap/open_laba" />
+
+        <ImageView
+            android:id="@+id/saveAudio"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/btn_hangup_conned"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

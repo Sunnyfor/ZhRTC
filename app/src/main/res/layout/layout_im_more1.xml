@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_person"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- 第一排 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:paddingTop="5dp"
+        android:weightSum="4">
+
+        <!-- 2 -->
+
+        <LinearLayout
+            android:id="@+id/container_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_voice_call"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/Voice_call"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <!-- 3 -->
+
+        <LinearLayout
+            android:id="@+id/container_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_video_call"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center"
+                android:text="@string/video_diaoyong"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_video_luxiang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_video_upload"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+
+                android:text="@string/video_up"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <!-- 4 -->
+
+        <LinearLayout
+            android:id="@+id/container_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_video"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+
+                android:text="@string/Video_call"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 第二排 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:paddingTop="5dp"
+        android:weightSum="4">
+
+        <!-- 第一个 -->
+
+        <LinearLayout
+            android:id="@+id/container_file"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_picture"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+
+                android:text="半双工单呼"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <!-- 第二个 -->
+
+        <LinearLayout
+            android:id="@+id/container_voice_call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_location"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/send_loction"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <!-- 第三个 -->
+
+        <LinearLayout
+            android:id="@+id/container_voice_call_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_video_record"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/send_video"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_voice_down_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/btn_file"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@mipmap/ic_launcher"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/send_file"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_camera_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <ImageView
+                android:id="@+id/btn_viedeo_camera_now"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/real_time_video"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_camera_history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="54dp"
+                android:layout_height="54dp">
+
+                <ImageView
+                    android:id="@+id/btn_viedeo_camera_history"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/history_video"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

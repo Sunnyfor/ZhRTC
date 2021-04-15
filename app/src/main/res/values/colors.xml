@@ -3,8 +3,137 @@
 
     <color name="color_theme">#0BA0EF</color>
 
+<!--    <color name="purple_200">@color/color_theme</color>-->
+    <color name="purple_500">@color/color_theme</color>
+    <color name="purple_700">@color/color_theme</color>
+
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">@color/color_theme</color>
+    <color name="colorPrimaryDark">@color/color_theme</color>
+    <color name="colorAccent">@color/color_theme</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <!-- 普通的淡黑色 -->
+    <color name="font_black">#ff000000</color>
+
+
+    <!-- 淡黑色 -->
+    <color name="telfont_color_default">#FFFFFF</color>
+    <color name="red">#DB214C</color>
+    <color name="gray">#8E9397</color>
+    <color name="gray_holo">#444546</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="blue_color_normal">#3BB3C2</color>
+    <!-- app的主蓝色 -->
+    <color name="blue_color_selected">#42929D</color>
+    <!-- 深蓝色 -->
+    <!-- app的主黄色 -->
+    <!-- 浅黄色 -->
+    <!-- app的主紫色 -->
+    <!-- 浅紫色 -->
+    <color name="green_color_normal">#51A934</color>
+
+    <!-- app的主绿色 -->
+    <!-- 浅绿色 -->
+    <!-- app的主红色 -->
+    <color name="red_color_selected">#F5C0CC</color>
+    <!-- 浅红色 -->
+    <color name="gray_70">#707070</color>
+    <!-- 灰色 -->
+    <color name="yin">#BCBBBB</color>
+    <color name="yin2">#AAAAAA</color>
+    <color name="hui">#cccccc</color>
+    <color name="lanse">#3A90E2</color>
+    <color name="tab_font_normal">#ff000000</color>
+    <color name="tab_font_selected">#ff0064c8</color>
+
+    <color name="white2">#ffffffff</color>
+    <!-- 以下为新的ui所使用的色值 -->
+    <color name="new_ui_blue">#ff0064c8</color>
+    <color name="new_ui_textcolorhint">#ffcccccc</color>
+    <color name="new_ui_login_setting_page_bk">#fff9f9fa</color>
+    <color name="new_ui_group_item_divider_color">#ffdedfe0</color>
+    <color name="new_ui_meeting_reply_text_color">#959BA2</color>
+    <color name="black_p50">#7f000000</color>
+    <color name="my_blue">#4876FF</color>
+
+    <!-- 日历的颜色 -->
+    <!-- menudraw -->
+    <color name="schedule_week">#40b0fc</color>
+    <color name="dialog_sure_color">#0084c8</color>
+    <color name="app_logo_color">#2EC500</color>
+    <color name="app_setting_color">#DFDFDF</color>
+    <color name="orange">#FE7500</color>
+    <color name="color_red_light">#FBE5D6</color>
+    <color name="color_gray_light">#F0F0F0</color>
+    <color name="color_gray">#D9D9D9</color>
+    <color name="color_gray2">#F2F2F2</color>
+    <color name="color_text_black">#000</color>
+    <color name="color_white">#fff</color>
+    <color name="color_yellow_lingshui_theme">#FE8200</color>
+    <!-- 陵水扶贫种类颜色 -->
+    <color name="jyfc">#DAE3F3</color>
+    <color name="cyfp">#E2F0D9</color>
+    <color name="jrww">#D3F5FA</color>
+    <color name="wfgz">#FBE5D6</color>
+    <color name="ylbx">#D4F9DD</color>
+    <color name="ylfc">#FDB6EB</color>
+    <color name="hnzc">#E7F3C0</color>
+    <color name="sfjz">#DBCCFD</color>
+    <color name="stbc">#CAE4FF</color>
+    <color name="kqym">#FF799F</color>
+    <color name="ldlzy">#8BF780</color>
+    <color name="dbj">#C4DBEE</color>
+    <color name="glbt">#D7F7D6</color>
+    <color name="qt">#F3F5B9</color>
+    <color name="red_choise">#FBE5D6</color>
+    <color name="red_choise_holo">#F4B183</color>
+
+    <!-- 8s深度定制颜色 -->
+    <color name="cus_theme">#386783</color>
+    <color name="cus_green">#00B050</color>
+    <color name="cus_orange">#FF6700</color>
+    <color name="cus_gry">#A6A6A6</color>
+    <color name="bluejeff">#0861B1</color>
+    <color name="ChuBlue">#33627E</color>
+    <!-- 深蓝色(定制版的主题蓝色加深,可用于按钮点击后) -->
+    <color name="cus_theme_holo">#182F3D</color>
+    <!-- 深橘黄色(定制版的主题橘黄色加深,可用于按钮点击后) -->
+    <color name="cus_orange_holo">#BB4A00</color>
+
+    <color name="task_blue">#0064C6</color>
+    <color name="task_blue_holo">#004d99</color>
+    <color name="task_text_black">#333333</color>
+    <color name="task_red_light">#EA5252</color>
+    <color name="task_red_holo">#e73c3c</color>
+    <color name="task_activity_bg">#F1F1F1</color>
+    <color name="yellow">#D1B601</color>
+    <color name="darkBlue">#19333F</color>
+
+
+    <!--dmr -->
+    <color name="PTT_Yellow">#ffffcc00</color>
+    <color name="listview_textcolor">#ffffcc00</color>
+    <color name="listview_textcolor_white">#ffffffff</color>
+
+
+    <!--几米对讲机-->
+
+    <color name="light_gray">#ffebebeb</color>
+    <color name="gray_white">#424240</color>
+    <color name="xian_l">#2a2a2a</color>
+    <color name="xian_r">#525252</color>
+    <color name="ptt_btn_bg">#bbc1c4</color>
+    <color name="page_top_Tcolor">#fff</color>
+    <color name="scall_Tcolor">#ebebeb</color>
+    <color name="scall_Tcolor_ing">#ebebeb</color>
+    <color name="scall_Tcolor_fail">#ff1c1c</color>
+    <color name="scall_Tcolor_success">#3fbcf1</color>
+
 </resources>

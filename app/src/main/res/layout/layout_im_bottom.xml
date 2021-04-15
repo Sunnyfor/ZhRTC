@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_rectangle_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/buildGroup"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="6dp"
+        android:gravity="center"
+        android:text="管理组"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_set_mode_voice"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="6dp"
+        android:background="@mipmap/icon_chat_voice"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_set_mode_keyboard"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/chatting_setmode_keyboard_btn"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/btn_press_to_speak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/chat_press_speak_btn"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_pushtotalk"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/edittext_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_white_dp10"
+            android:maxLines="3"
+            android:minHeight="40dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="3dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="3dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_startRecorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_press_to_speak_bg"
+            android:gravity="center"
+            android:maxLines="3"
+            android:minHeight="40dp"
+            android:paddingLeft="1dp"
+            android:paddingTop="3dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="3dp"
+            android:text="@string/press_to_speak"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/icon_chattype_add" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/chat_send_btn_selector"
+        android:text="@string/send"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>
