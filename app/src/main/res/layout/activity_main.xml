@@ -13,15 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="帐号"
-        android:text="8000" />
-
-    <EditText
-        android:id="@+id/passWord"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="密码"
-        android:text="8000" />
+        android:text="8002" />
 
     <EditText
         android:id="@+id/ip"

@@ -42,8 +42,6 @@ public class MainActivity extends BaseActivity {
 
     @BindView(R.id.userAccount)
     EditText userAccount;
-    @BindView(R.id.passWord)
-    EditText passWord;
     @BindView(R.id.ip)
     EditText ip;
     public static final int NO_ACCOUNT = 17;// 用户不存在
@@ -71,7 +69,6 @@ public class MainActivity extends BaseActivity {
 
 //        IdtLib.login(ip.getText().toString().trim(), 10000, userAccount.getText().toString(),
 //                passWord.getText().toString());
-
 
     }
 
@@ -159,7 +156,7 @@ public class MainActivity extends BaseActivity {
         } else if (view.getId() == R.id.btn_login) {
             IdtLib.login(ip.getText().toString().trim(), 10000,
                     userAccount.getText().toString(),
-                    passWord.getText().toString());
+                    userAccount.getText().toString());
 
         } else if (view.getId() == R.id.group) {
             Proxy.myDwsn = 0;
